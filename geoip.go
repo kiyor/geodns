@@ -92,7 +92,7 @@ func (g *GeoIP) setupGeoIPCity() {
 
 	g.setDirectory()
 
-	gi, err := geoip.OpenType(geoip.GEOIP_CITY_EDITION_REV1)
+	gi, err := geoip.OpenType(geoip.GEOIP_CITY_EDITION_REV0)
 	if gi == nil || err != nil {
 		log.Printf("Could not open city GeoIP database: %s\n", err)
 		return
